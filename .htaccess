@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+<FilesMatch "\.(ini|psd|log|sh|js)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
