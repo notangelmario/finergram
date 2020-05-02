@@ -11,7 +11,7 @@ hr {
 }
 #logo {
     user-select: none;
-    margin: 10px 0 10px 0;
+    margin: 5px 0 10px 0;
     font-family: "Pacifico";
     font-size: x-large;
     display: inline-block;
@@ -46,13 +46,29 @@ hr {
 }
 .photocont{
     display: inline-block;
+    overflow: hidden;
     margin: 0 10px 15px 10px;
     width: 256px;
     height: 256px;
+    border-radius: 10px;
 }
 .photocont img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     object-fit: cover;
+    transition: transform .2s;
+}
+
+@media only screen and (max-width: 768px){
+    .photocont{
+        display: inline-block;
+        margin: 0 5px 10px 5px;
+        width: 128px;
+        height: 128px;
+    }
+}
+/* Events */
+.photocont img:hover {
+  filter: blur(1px);
+  transform: scale(1.2);
 }
