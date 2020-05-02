@@ -75,6 +75,7 @@ hr {
     object-fit: cover;
     transition: transform .2s;
 }
+
 /* Events */
 .profilecont img:hover{
   filter: blur(1px);
