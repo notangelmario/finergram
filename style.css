@@ -58,17 +58,17 @@ hr {
     object-fit: cover;
     transition: transform .2s;
 }
-/* Phone fixes */
-@media only screen and (max-width: 700px){
-    .photocont{
-        display: inline-block;
-        margin: 0 5px 10px 5px;
-        width: 128px;
-        height: 128px;
-    }
-}
 /* Events */
 .photocont img:hover {
   filter: blur(1px);
   transform: scale(1.2);
+}
+/* Phone fixes */
+@media only screen and (max-width: 700px){
+  .photocont{
+    display: inline-block;
+    margin: 0 5px 10px 5px;
+    width: 128px;
+    height: 128px;
+    }
 }
