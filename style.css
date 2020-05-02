@@ -9,6 +9,7 @@ hr {
 }
 .nav {
     margin: 0 0 0 0;
+    width: 100%;
 }
 #logo {
     user-select: none;
@@ -58,7 +59,8 @@ hr {
 }
 
 .photos {
-    margin: 50px 128px;
+    margin: 50px ;
+    padding: auto;
     display: inline-block;
 }
 .photocont{
@@ -74,6 +76,8 @@ hr {
     height: 100%;
     object-fit: cover;
     transition: transform .2s;
+    margin: 0;
+    padding: 0;
 }
 
 /* Events */
@@ -86,7 +90,10 @@ hr {
   transform: scale(1.2);
 }
 /* Phone fixes */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 768px){
+  .nav{
+    width: 100%;
+  }
   .photocont{
     display: inline-block;
     margin: 0 5px 10px 5px;
