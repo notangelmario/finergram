@@ -1,0 +1,9 @@
+.profilecont img:hover{
+  filter: blur(1px);
+  transform: scale(1.2);
+}
+
+.photocont img:hover {
+  filter: blur(1px);
+  transform: scale(1.2);
+}
