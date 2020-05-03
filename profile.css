@@ -35,8 +35,13 @@
 
 #photos{
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
+  flex-direction: row;
   margin: 0 200px;
+  padding: 0 auto;
 }
 
 .photocont {

@@ -2,14 +2,13 @@
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: white;
-    z-index: 1
+    z-index: 1;
 }
 #nav hr {
   margin:0;
   padding: 0;
   color: black;
-  background-color: black
+  background-color: black;
   border: solid 0.7px black;
 }
 
@@ -22,6 +21,7 @@
   }
 
 #nav .leftnav {
+    display: block;
     width: 20px;
     height: 20px;
     float: left;
@@ -30,12 +30,39 @@
     border-radius: 30%;
     padding: 5px 5px 5px 5px;
 }
-#nav .rightnav {
-    width: 20px;
-    height: 20px;
+#nav .darkmode_switch {
+    position: relative;
+    width: 30px;
     float: right;
+    height: 30px;
     margin: 10px 10px 0px 0;
-    border: solid 1px;
     border-radius: 30%;
-    padding: 5px 5px 5px 5px;
+}
+
+#nav .darkmode_switch > input {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 1px;
+  left: 1px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#nav .darkmode_switch > div {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid 1px;
+  border-radius: 30%;  
+  background-image: url("/resources/icons/custom/moon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
