@@ -61,7 +61,7 @@
   height: 100%;
   border: solid 1px;
   border-radius: 30%;  
-  background-image: url("/resources/icons/custom/moon.jpg");
+  background-image: url("resources/icons/custom/moon.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 60%;
